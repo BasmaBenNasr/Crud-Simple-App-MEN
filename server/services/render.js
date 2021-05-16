@@ -19,5 +19,12 @@ exports.add_user=(req,res)=>{
 }
 
 exports.update_user=(req,res)=>{
-    res.render("update_user");
+    //i will make the update mathod render for me the data that i want to update on it or modify using axios
+    axios.get('http://localhost:3000/api/users',{params:{id:req.query.id}})
+    .then(function(userdata){
+        res.render("update_user",{user:userdata.data})
+    })
+      .catch(err=>{
+          res.send(err)
+      })
 }
