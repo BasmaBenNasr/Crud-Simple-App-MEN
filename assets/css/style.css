@@ -2,7 +2,7 @@
 
 :root{
     --dark: #2b2d42;
-    --light: #adb5bd;
+    --light: #48494b;
     --border: #dee2e6;
     --border-btn: #edf2f4;
 }
@@ -148,6 +148,7 @@ table{
 
 .form-title > h2{
     padding: .5em 0;
+    
 }
 
 .new_user{
@@ -158,6 +159,7 @@ table{
 #update_user .form-group,
 #add_user .form-group{
     margin: .4em 0;
+    font-weight: bold;
 }
 
 #update_user .form-group input[type="text"],
@@ -175,12 +177,14 @@ table{
 #update_user .form-group .radio,
 #add_user .form-group .radio{
     margin: 1em 2em;
+   
 }
 
 /* adding style to radio buttons */
 .radio input[type='radio']{
     position: absolute;
     opacity: 0;
+    
 }
 
 .radio input[type='radio'] + .radio-label:before{
@@ -199,11 +203,13 @@ table{
     text-align: center;
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
+    
 }
 
 .radio input[type='radio']:checked + .radio-label:before{
     background-color: var(--dark);
     box-shadow: inset 0 0 0 4px #e9ecef;
+    
 }
 
 .radio input[type='radio']:focus + .radio-label:before{
@@ -215,16 +221,17 @@ table{
     box-shadow: inset 0 0 0 4px #e9ecef;
     border-color: #b4b4b4;
     background: #b4b4b4;
+    
 }
 
 #update_user .form-group .btn,
 #add_user .form-group .btn{
     width: 100%;
-    padding: .9em 1em;
-    background-color:#16db93; 
+    padding: .3em 1em;
+    background-color: #16db93;
     border: none;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     cursor: pointer;
     border-radius: .2em;
     margin: .5em 0;
@@ -232,6 +239,7 @@ table{
     color: white;
     background-color: var(--dark);
     color: var(--border);
+    letter-spacing: 5px;
 }
 
 #update_user .form-group .btn:hover,
