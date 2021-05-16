@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const bodyparser = require("body-parser")
 const path = require("path")
 
-
+const connectDB=require('./server/database/connection')
 
 const app = express();
 
@@ -13,6 +13,9 @@ const PORT=process.env.PORT || 5000
 
 //log requests
 app.use(morgan('tiny'));
+
+//mongodb connection
+connectDB();
 
 
 //parse request to body parser
