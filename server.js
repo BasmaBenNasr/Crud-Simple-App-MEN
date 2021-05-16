@@ -26,10 +26,7 @@ app.use("/css",express.static(path.resolve(__dirname,"assets/css")));
 app.use("/img",express.static(path.resolve(__dirname,"assets/img")));
 app.use("/js",express.static(path.resolve(__dirname,"assets/js")));
 
-app.get('/', (req,res)=>{
-    //res.send("Crud Application");
-    //we want to render what's in the html
-    res.render("index.ejs")
-})
+//load routers
+app.use('/',require('./server/routes/router'))
 
 app.listen(3000, ()=>{console.log(`Server is running on http://localhost:${PORT}`)})

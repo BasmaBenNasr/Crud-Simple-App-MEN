@@ -111,7 +111,7 @@ table{
 }
 
 .table tr:hover{
-    background-color:#690aa015 ;
+    background-color:#440f6269 ;
 }
 
 .table tr:hover td > a{
@@ -227,17 +227,15 @@ table{
 #add_user .form-group .btn{
     width: 100%;
     padding: .9em 1em;
-    background-color:#16db93; 
+    background-color:#2b2d42; 
     border: none;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.05em;
     cursor: pointer;
     border-radius: .2em;
     margin: .5em 0;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 
-#update_user .form-group .btn:hover,
-#add_user .form-group .btn:hover{
-    background-color: var(--dark);
-    color: var(--border);
-}
